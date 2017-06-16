@@ -1,3 +1,10 @@
-<p>
-  member-details works!
-</p>
+<div class="">
+  <h2>{{(memberToDisplay | async)?.name}} <small>{{(memberToDisplay | async)?.clubRank}}</small></h2>
+  <h4>{{(memberToDisplay | async)?.age}} y/o {{(memberToDisplay | async)?.sex}}</h4>
+  <h6>"{{(memberToDisplay | async)?.quote}}"</h6>
+  <div class="bio">
+    <h5>{{(memberToDisplay | async)?.bio}}</h5>
+  </div>
+  <h5>Favorite Game: {{(memberToDisplay | async)?.favoriteGame}}</h5>
+  <h5>Interests: {{(memberToDisplay | async)?.interests}}</h5>
+</div>

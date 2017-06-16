@@ -10,6 +10,10 @@ export class MemberService {
     this.members = database.list('members');
    }
 
+  getMemberById(memberId: string){
+    return this.database.object('members/' + memberId);
+  }
+
   getMembers() {
     return this.members;
   }
