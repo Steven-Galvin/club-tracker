@@ -5,6 +5,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+/*CONTENT*/
+
 .my-content {
   display: flex;
   margin: 25px auto;
@@ -12,8 +15,11 @@ body {
   color: white;
   justify-content: center;
   width: 80%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
+
+/*NAVBAR*/
+
 .my-nav {
   display: flex;
   border-bottom: 1px solid black;
@@ -48,10 +54,9 @@ body {
 a {
   color: inherit;
 }
-.my-content {
-  padding-top: 2em;
-  padding-bottom: 8em;
-}
+
+/*FOOTER*/
+
 .my-footer {
   background-color: #f58486;
   border-top: 1px solid black;
@@ -76,7 +81,12 @@ a {
   color: black;
   text-shadow: 1px 1px 1px white;
 }
-
 #logo {
   height: 25px;
+}
+
+/*CONTACT*/
+
+#contact a {
+  color: #eee;
 }
