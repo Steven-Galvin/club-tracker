@@ -1,8 +1,8 @@
 export var masterFirebaseConfig = {
-    apiKey: "AIzaSyCT2H-69tI_sZuNkUUXiUWEvr_NTImyzTE",
-    authDomain: "test-7b345.firebaseapp.com",
-    databaseURL: "https://test-7b345.firebaseio.com",
-    projectId: "test-7b345",
-    storageBucket: "test-7b345.appspot.com",
-    messagingSenderId: "796837210625"
+    apiKey: "AIzaSyCrxmEegDeX6zXPmOfJHJ5Ws4FRo8pR2tY",
+    authDomain: "club-tracker-8eb21.firebaseapp.com",
+    databaseURL: "https://club-tracker-8eb21.firebaseio.com",
+    projectId: "club-tracker-8eb21",
+    storageBucket: "club-tracker-8eb21.appspot.com",
+    messagingSenderId: "1012777541288"
   };

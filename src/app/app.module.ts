@@ -43,7 +43,6 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
