@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterBySortByRankPipe: string = "allMembers";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -23,5 +24,9 @@ export class MembersComponent implements OnInit {
 
   goToDetailPage(clickedMember) {
     this.router.navigate(['members/' + clickedMember.$key]);
-  };
+  }
+
+  onChange(optionFromMenu) {
+    this.filterBySortByRankPipe = optionFromMenu;
+  }
 }

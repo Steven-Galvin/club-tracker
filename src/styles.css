@@ -112,6 +112,94 @@ a {
   background: rgba(150, 150, 150, 0.7);
 }
 
+/*BUTTON*/
+
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.myBtn {
+  color: #fff;
+  background-color: rgba(178,229,200,0.8);
+  border-color: rgba(178,229,200,0.8);
+}
+
+.myBtn:hover,
+.myBtn:focus,
+.myBtn:active,
+.myBtn.active,
+.open .dropdown-toggle.myBtn {
+  color: #fff;
+  background-color: rgba(178,229,200,0.8);
+  border-color: rgba(178,229,200,0.8);
+}
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.myBtn.outline {
+    border: 2px solid rgba(178,229,200,0.8);
+    color: rgba(178,229,200,0.8);
+}
+.myBtn.outline:hover, .myBtn.outline:focus, .myBtn.outline:active, .myBtn.outline.active, .open > .dropdown-toggle.myBtn {
+    transition: border-color 0.3s ease,
+                color 0.3s ease;
+    color: rgba(245,132,134,0.8);
+    border-color: rgba(245,132,134,0.8);
+}
+.myBtn.outline:active, .myBtn.outline.active {
+    border-color: rgba(150, 150, 150, 0.8);
+    color: rgba(150, 150, 150, 0.8);
+    box-shadow: none;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
 /*SHAKE*/
 
 /*LITTLE*/

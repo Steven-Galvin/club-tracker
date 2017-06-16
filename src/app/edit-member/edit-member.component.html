@@ -1,1 +1,35 @@
-test
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input class="form-control" [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Member Bio:</label>
+<textarea class="form-control" [(ngModel)]="selectedMember.bio"></textarea>
+<br>
+
+<label>New Member Quote:</label>
+<input class="form-control" [(ngModel)]="selectedMember.quote">
+<br>
+
+<label>New Member Sex:</label>
+<input class="form-control" [(ngModel)]="selectedMember.sex">
+<br>
+
+<label>New Member Age:</label>
+<input type="number" class="form-control" [(ngModel)]="selectedMember.age">
+<br>
+
+<label>New Member Interests:</label>
+<input class="form-control" [(ngModel)]="selectedMember.interests">
+<br>
+
+<label>New Member Club Rank:</label>
+<input class="form-control" [(ngModel)]="selectedMember.clubRank">
+<br>
+
+<label>New Member Favorite Game:</label>
+<input class="form-control" [(ngModel)]="selectedMember.favoriteGame">
+<br>
+<button class="btn btn-lg myBtn outline" (click)="beginUpdatingMember(selectedMember)">Update</button>
+<button class="btn btn-lg btn-danger" (click)="beginDeletingMember(selectedMember)">Delete Member</button>

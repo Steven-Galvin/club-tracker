@@ -1,3 +1,57 @@
-<p>
-  admin works!
-</p>
+<h2>Add New Member</h2>
+<br>
+<div>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input class="form-control" #newName>
+  </div>
+  <br>
+  <div>
+    <label>Bio:</label>
+    <br>
+    <textarea class="form-control" #newBio></textarea>
+  </div>
+  <br>
+  <div>
+    <label>Quote:</label>
+    <br>
+    <input class="form-control" #newQuote>
+  </div>
+  <br>
+  <div>
+    <label>Sex:</label>
+    <br>
+    <input class="form-control" #newSex>
+  </div>
+  <br>
+  <div>
+    <label>Age:</label>
+    <br>
+    <input class="form-control" #newAge type="number">
+  </div>
+  <br>
+  <div>
+    <label>Interests:</label>
+    <br>
+    <input class="form-control" #newInterests>
+  </div>
+  <br>
+  <div>
+    <label>Club Rank:</label>
+    <br>
+    <input class="form-control" #newClubRank>
+  </div>
+  <br>
+  <div>
+    <label>Favorite Game:</label>
+    <br>
+    <input class="form-control" #newFavoriteGame>
+  </div>
+  <br>
+  <button class="btn btn-lg myBtn outline" (click)="submitForm(newName.value, newBio.value, newQuote.value, newSex.value, newAge.value, newInterests.value, newClubRank.value, newFavoriteGame.value); newName.value=''; newBio.value=''; newQuote.value=''; newSex.value=''; newAge.value=''; newInterests.value=''; newClubRank.value=''; newFavoriteGame.value='';">Add Member</button>
+</div>
+<hr>
+<div>
+  <app-members></app-members>
+</div>
