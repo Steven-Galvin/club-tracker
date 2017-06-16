@@ -1,0 +1,38 @@
+{ "members": [{
+  "name": "Steven Galvin",
+  "bio": "Software developer in the making. Number one Playtonic fan. I love any and all games they've ever made!",
+  "quote": "Why do I talk all the time, it's really hard to make these rhyme!",
+  "sex": "Male",
+  "age": 23,
+  "interests": "Web and video game development. Music production. Philosophy and psychology.",
+  "clubRank": "Admin",
+  "favoriteGame": "Banjo-Kazooie"
+  }, {
+  "name": "Arianna Chau",
+  "bio": "Aspiring front-end dev. I love love and wish there was more of it. I'm always looking to bring the best out in those around me and I hope see those I love succeed one day.",
+  "quote": "We are part of this universe; we are in this universe, but perhaps more important than both of those facts, is that the universe is in us.",
+  "sex": "Female",
+  "age": 22,
+  "interests": "Crystals and flowers. Vintage and minimalism. RPG's and games with beautiful art. Psychology.",
+  "clubRank": "Expert",
+  "favoriteGame": "Yooka-Laylee"
+  }, {
+  "name": "Aris Decker",
+  "bio": "I'm a carefree go with the flow type guy. Basketball is my passion, whether it be playing or coaching, I love it all.",
+  "quote": "Issa quote.",
+  "sex": "Male",
+  "age": 23,
+  "interests": "Basketball. Coaching. Video games.",
+  "clubRank": "Newbie",
+  "favoriteGame": "Banjo-Tooie"
+  }, {
+  "name": "McKenzie Engelgau",
+  "bio": "If you ain't talking equality, love, and respect, I don't want to hear it. I stand firmly by what I believe.",
+  "quote": "Close your mouth and open your ears.",
+  "sex": "Female",
+  "age": 22,
+  "interests": "Politics. Psychology. Hip Hop",
+  "clubRank": "Newbie",
+  "favoriteGame": "Banjo-Kazooie: Nuts & Bolts"
+  }]
+}

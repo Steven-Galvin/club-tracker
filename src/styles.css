@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.my-content {
+  display: flex;
+  margin: 25px auto;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.my-nav {
+  display: flex;
+  border-bottom: 1px solid black;
+  background-color: #b2e5c8;
+}
+.my-nav ul {
+  min-width: 100%;
+  display: block;
+  list-style: none;
+  padding: 1em 0 1.5em 0;
+}
+.my-nav ul li {
+  float: right;
+  margin-left: 1em;
+}
+.my-nav ul li:first-child {
+  float: left;
+  margin-left: 0;
+}
+.my-nav a {
+  color: black;
+}
+.my-nav a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+.my-nav a:focus {
+  text-decoration: none;
+  color: black;
+}
+a {
+  color: inherit;
+}
+.my-content {
+  padding-top: 2em;
+  padding-bottom: 8em;
+}
+.my-footer {
+  background-color: #f58486;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.my-footer ul {
+  min-width: 100%;
+  display: block;
+  list-style: none;
+  padding: 0.5em 0 0em 0;
+  text-align: center;
+}
+.my-footer ul li {
+  display: inline;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+.my-footer ul li:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+#logo {
+  height: 25px;
+}
