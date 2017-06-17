@@ -4,8 +4,19 @@
 
 This web app was made primarily with Angular 4 and the Angular CLI, Typescript, and the Firebase Database. It's purpose is to show off my week four knowledge from Epicodus and my efficiency with the above. This club tracker is a simple app designed to give the user the ability to see a list of club members as well as view their specific details on a dynamic page. The user can also sort the users by certain properties (rank in club for example). There is also an admin side that allows the admins to create, update, and delete members.
 
+You can view the live site here https://club-tracker-8eb21.firebaseapp.com/
+
 ## Landing Page:
-![](./src/assets/images/landingpage.png "Playtonic")
+![](./src/assets/images/welcome.png "Playtonic")
+
+## About Page:
+![](./src/assets/images/about.png "About")
+
+## Members Page:
+![](./src/assets/images/members.png "Members")
+
+## Dynamic Member Page:
+![](./src/assets/images/member.png "Member")
 
 ## Planning
 
@@ -55,7 +66,7 @@ As of writing this README, these instructions work on MacOS.
 
 * Run `$ git clone <this-repository-url>`
 * Then `$ cd club-tracker`
-* Once in the club-tracker folder, run `$ npm install` and `$ bower install`
+* Once in the club-tracker folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
 * You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
   * Once logged in, click on 'Go To Console'.
   * Then click 'Add project', give it a name, and select your region.
