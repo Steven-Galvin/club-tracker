@@ -1,47 +1,50 @@
-<h4>Edit Member</h4>
+<button class="btn btn-sm btn-warning outline" (click)="showEdit = !showEdit">Edit Member</button>
 
-<label>New Member Name:</label>
-<input class="form-control" [(ngModel)]="selectedMember.name">
-<br>
+<div *ngIf="showEdit">
+  <label>New Member Name:</label>
+  <input class="form-control" [(ngModel)]="selectedMember.name">
+  <br>
 
-<label>New Member Bio:</label>
-<textarea class="form-control" [(ngModel)]="selectedMember.bio"></textarea>
-<br>
+  <label>New Member Bio:</label>
+  <textarea class="form-control" [(ngModel)]="selectedMember.bio"></textarea>
+  <br>
 
-<label>New Member Quote:</label>
-<input class="form-control" [(ngModel)]="selectedMember.quote">
-<br>
+  <label>New Member Quote:</label>
+  <input class="form-control" [(ngModel)]="selectedMember.quote">
+  <br>
 
-<label>New Member Sex:</label>
-<select class="form-control" [(ngModel)]="selectedMember.sex">
-  <option value="Male" selected>Male</option>
-  <option value="Female">Female</option>
-  <option value="Other">Other</option>
-</select><br>
+  <label>New Member Sex:</label>
+  <select class="form-control" [(ngModel)]="selectedMember.sex">
+    <option value="Male" selected>Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select><br>
 
-<label>New Member Age:</label>
-<input type="number" class="form-control" [(ngModel)]="selectedMember.age">
-<br>
+  <label>New Member Age:</label>
+  <input type="number" class="form-control" [(ngModel)]="selectedMember.age">
+  <br>
 
-<label>New Member Interests:</label>
-<input class="form-control" [(ngModel)]="selectedMember.interests">
-<br>
+  <label>New Member Interests:</label>
+  <input class="form-control" [(ngModel)]="selectedMember.interests">
+  <br>
 
-<label>New Member Club Rank:</label>
-<select class="form-control" [(ngModel)]="selectedMember.clubRank">
-  <option value="Admin" selected>Admin</option>
-  <option value="Expert">Expert</option>
-  <option value="Newbie">Newbie</option>
-</select><br>
+  <label>New Member Club Rank:</label>
+  <select class="form-control" [(ngModel)]="selectedMember.clubRank">
+    <option value="Admin" selected>Admin</option>
+    <option value="Expert">Expert</option>
+    <option value="Newbie">Newbie</option>
+  </select><br>
 
-<label>New Member Favorite Game:</label>
-<select class="form-control" [(ngModel)]="selectedMember.favoriteGame">
-  <option value="Banjo-Kazooie" selected>Banjo-Kazooie</option>
-  <option value="Banjo-Tooie">Banjo-Tooie</option>
-  <option value="Yooka-Laylee">Yooka-Laylee</option>
-  <option value="Other">Other</option>
-</select><br>
+  <label>New Member Favorite Game:</label>
+  <select class="form-control" [(ngModel)]="selectedMember.favoriteGame">
+    <option value="Banjo-Kazooie" selected>Banjo-Kazooie</option>
+    <option value="Banjo-Tooie">Banjo-Tooie</option>
+    <option value="Yooka-Laylee">Yooka-Laylee</option>
+    <option value="Other">Other</option>
+  </select><br>
 
-<br>
-<button class="btn btn-lg myBtn outline" (click)="beginUpdatingMember(selectedMember)">Update</button>
-<button class="btn btn-lg btn-danger" (click)="beginDeletingMember(selectedMember)">Delete Member</button>
+  <br>
+  <button class="btn btn-lg myBtn outline" (click)="beginUpdatingMember(selectedMember)">Update</button>
+  <button class="btn btn-lg btn-danger" (click)="beginDeletingMember(selectedMember)">Delete Member</button>
+</div>
+<hr>
