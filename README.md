@@ -13,7 +13,7 @@ You can view the live site here https://club-tracker-8eb21.firebaseapp.com/
 ![](./src/assets/images/about.png "About")
 
 ## Members Page:
-![](./src/assets/images/members.png "Members")
+![](./src/assets/images/list-members.png "Members")
 
 ## Dynamic Member Page:
 ![](./src/assets/images/member.png "Member")
