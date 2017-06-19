@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MembersComponent } from './members/members.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
 import { AdminComponent }   from './admin/admin.component';
+import { AuthComponent }   from './auth/auth.component';
 
 const appRoutes: Routes = [
   {
@@ -25,7 +26,7 @@ const appRoutes: Routes = [
     component: MemberDetailsComponent
   },   {
     path: 'admin',
-    component: AdminComponent
+    component: AuthComponent
   }
 ];
 

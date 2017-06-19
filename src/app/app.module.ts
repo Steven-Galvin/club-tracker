@@ -18,6 +18,7 @@ import { SortByRankPipe } from './sort-by-rank.pipe';
 import { routing } from './app.routing';
 import { SortBySexPipe } from './sort-by-sex.pipe';
 import { SortByFavGamePipe } from './sort-by-fav-game.pipe';
+import { AuthComponent } from './auth/auth.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,7 +40,8 @@ export const firebaseConfig = {
     AdminComponent,
     SortByRankPipe,
     SortBySexPipe,
-    SortByFavGamePipe
+    SortByFavGamePipe,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
