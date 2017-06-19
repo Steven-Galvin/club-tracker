@@ -1,12 +1,27 @@
 <h1>Members</h1>
-<select class="form-control" (change)="onChange($event.target.value)">
+<select class="form-control" (change)="onRankChange($event.target.value)">
   <option value="allMembers" selected="selected">All Members</option>
   <option value="admin">Admins</option>
   <option value="expert">Experts</option>
   <option value="newbie">Newbies</option>
 </select>
 <br>
-<div *ngFor="let member of members | async | sortByRank:filterBySortByRankPipe">
+<select class="form-control" (change)="onSexChange($event.target.value)">
+  <option value="allSexes" selected="selected">All Sexes</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+<br>
+<select class="form-control" (change)="onGameChange($event.target.value)">
+  <option value="allGames" selected="selected">All Games</option>
+  <option value="banjo-kazooie">Banjo-Kazooie</option>
+  <option value="banjo-tooie">Banjo-Tooie</option>
+  <option value="yooka-laylee">Yooka-Laylee</option>
+  <option value="other">Other</option>
+</select>
+<br>
+<div *ngFor="let member of members | async | sortByRank:filterBySortByRankPipe | sortBySex:filterBySortBySexPipe | sortByFavGame:filterBySortByFavGamePipe">
   <h4 class="details shake-little" (click)="goToDetailPage(member)">{{member.name}} <small>{{member.clubRank}}</small></h4>
   <div *ngIf="currentRoute === '/admin'">
     <h4>{{member.name}}</h4>

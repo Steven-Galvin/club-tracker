@@ -15,6 +15,8 @@ export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   filterBySortByRankPipe: string = "allMembers";
+  filterBySortBySexPipe: string = "allSexes";
+  filterBySortByFavGamePipe: string = "allGames";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -26,7 +28,15 @@ export class MembersComponent implements OnInit {
     this.router.navigate(['members/' + clickedMember.$key]);
   }
 
-  onChange(optionFromMenu) {
+  onRankChange(optionFromMenu) {
     this.filterBySortByRankPipe = optionFromMenu;
+  }
+
+  onSexChange(optionFromMenu) {
+    this.filterBySortBySexPipe = optionFromMenu;
+  }
+
+  onGameChange(optionFromMenu) {
+    this.filterBySortByFavGamePipe = optionFromMenu;
   }
 }

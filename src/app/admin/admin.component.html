@@ -22,7 +22,11 @@
   <div>
     <label>Sex:</label>
     <br>
-    <input class="form-control" #newSex>
+    <select class="form-control" #newSex>
+      <option value="Male" selected>Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
   </div>
   <br>
   <div>
@@ -39,15 +43,23 @@
   <br>
   <div>
     <label>Club Rank:</label>
-    <br>
-    <input class="form-control" #newClubRank>
+    <select class="form-control" #newClubRank>
+      <option value="Admin" selected>Admin</option>
+      <option value="Expert">Expert</option>
+      <option value="Newbie">Newbie</option>
+    </select>
   </div>
   <br>
   <div>
     <label>Favorite Game:</label>
-    <br>
-    <input class="form-control" #newFavoriteGame>
+    <select class="form-control" #newFavoriteGame>
+      <option value="Banjo-Kazooie" selected>Banjo-Kazooie</option>
+      <option value="Banjo-Tooie">Banjo-Tooie</option>
+      <option value="Yooka-Laylee">Yooka-Laylee</option>
+      <option value="Other">Other</option>
+    </select>
   </div>
+  <br>
   <br>
   <button class="btn btn-lg myBtn outline" (click)="submitForm(newName.value, newBio.value, newQuote.value, newSex.value, newAge.value, newInterests.value, newClubRank.value, newFavoriteGame.value); newName.value=''; newBio.value=''; newQuote.value=''; newSex.value=''; newAge.value=''; newInterests.value=''; newClubRank.value=''; newFavoriteGame.value='';">Add Member</button>
 </div>

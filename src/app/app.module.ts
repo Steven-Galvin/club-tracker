@@ -16,6 +16,8 @@ import { EditMemberComponent } from './edit-member/edit-member.component';
 import { AdminComponent } from './admin/admin.component';
 import { SortByRankPipe } from './sort-by-rank.pipe';
 import { routing } from './app.routing';
+import { SortBySexPipe } from './sort-by-sex.pipe';
+import { SortByFavGamePipe } from './sort-by-fav-game.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +37,9 @@ export const firebaseConfig = {
     MemberDetailsComponent,
     EditMemberComponent,
     AdminComponent,
-    SortByRankPipe
+    SortByRankPipe,
+    SortBySexPipe,
+    SortByFavGamePipe
   ],
   imports: [
     BrowserModule,
